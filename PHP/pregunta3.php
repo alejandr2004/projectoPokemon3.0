@@ -1,27 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/estilo.css">
-    <title>Document</title>
-</head>
+
+<link rel="stylesheet" href="../CSS/estilo.css">
+
+
 <body class="fondobatalla">
-<link href="enlace nivel 3"><img src="imagen nivel 3">
+<!-- <link href="enlace nivel 3"><img src="imagen nivel 3"> -->
 
 
-<form method="get">
-<p>¿Cuál es el Pokémon legendario que representa el equilibrio entre el tiempo y el espacio?<p>
+<form class="form2" method="get">
+<p class="estilo">¿Cuál es el Pokémon legendario que representa el equilibrio entre el tiempo y el espacio?<p>
 <input type="radio" id="respuesta1" name="respuesta" value="a">
   <label for="respuesta1">a. Palkia</label><br>
   <input type="radio" id="respuesta2" name="respuesta" value="b">
   <label for="respuesta2">b. Giratina</label><br>
   <input type="radio" id="respuesta3" name="respuesta" value="c">
-  <label for="respuesta3">c.  Dialga</label><br> esta es la correcta
+  <label for="respuesta3">c.  Dialga</label><br>
   <input type="radio" id="respuesta4" name="respuesta" value="d">
   <label for="respuesta4">d. Arceus</label><br><br>
   <button class="bajo">Enviar</button>
 </form> 
+
+<div>
+  <img class="rival3" src="../IMG/enfrente_enemigo.gif">
+</div>
+<div>
+  <img class="aliado3" src="../IMG/umbreon_espaldas.gif">
+</div>
 
 <?php 
 
@@ -41,7 +44,7 @@ if($respuesta_usuario=="c"){
 
 if(isset($respuesta_usuario) && $respuesta_usuario!="c"){
   $valor_barra=50;
-  echo '<p class="pista">introduce la pista aqui Alex</p>';
+  echo '<p class="pista">Este Pokemon legendario sale en la portada del juego Pokemon diamente</p>';
  }
 
 ?>
@@ -56,7 +59,7 @@ if (empty($_SESSION['tick_2'])){
 
 $_SESSION['tramposo']=1;   
 
-header("location:trampas.php");
+header("location:../trampas.php");
 }
 
 

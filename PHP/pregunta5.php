@@ -1,14 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/estilo.css">
-    <title>Document</title>
-</head>
+
+<link rel="stylesheet" href="../CSS/estilo.css">
+
 <body class="fondobatalla">
   
-<link href="enlace nivel 5"><img src="imagen nivel 5">
+<!-- <link href="enlace nivel 5"><img src="imagen nivel 5"> -->
 
 <form method="get">
 <p>¿Cuál es el Pokémon que evoluciona en Jolteon, Vaporeon o Flareon mediante diferentes métodos de evolución?<p>
@@ -17,11 +12,19 @@
   <input type="radio" id="respuesta2" name="respuesta" value="b">
   <label for="respuesta2">b. Mew</label><br>
   <input type="radio" id="respuesta3" name="respuesta" value="c">
-  <label for="respuesta3">c.  Eevee</label><br> correcta
+  <label for="respuesta3">c.  Eevee</label><br> 
   <input type="radio" id="respuesta4" name="respuesta" value="d">
   <label for="respuesta4">d. Pikachu</label><br><br>
   <button class="bajo">Enviar</button>
 </form>
+
+<div>
+  <img class="rival5" src="../IMG/skitty enemigo (de frente).gif">
+</div>
+
+<div>
+  <img class="aliado5" src="../IMG/umbreon_espaldas.gif">
+</div>
 
 <?php 
 session_start();
@@ -39,7 +42,7 @@ if($respuesta_usuario=="c"){
 
 if(isset($respuesta_usuario) && $respuesta_usuario!="c"){
   $valor_barra=50;
-  echo '<p class="pista">introudce la pista Alex</p>';
+  echo '<p class="pista">Este pokemon tiene el pelaje de color marron</p>';
  }
 
 
@@ -56,7 +59,7 @@ if(isset($respuesta_usuario) && $respuesta_usuario!="c"){
 if (empty($_SESSION['tick_4'])){
   
 $_SESSION['tramposo']=1;
-header("location:trampas.php");
+header("location:../trampas.php");
 }
 
 

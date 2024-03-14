@@ -1,14 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/estilo.css">
-    <title>Document</title>
-</head>
+<link rel="stylesheet" href="../CSS/estilo.css">
+
 <body class="fondobatalla">
     
-<link href="enlace nivel 4"><img src="imagen nivel 4">
+<!-- <link href="enlace nivel 4"><img src="imagen nivel 4"> -->
 
 
 
@@ -24,6 +18,14 @@
   <label for="respuesta4">d. Psquico</label><br><br> correcta
   <button class="bajo">Enviar</button>
 </form>
+
+<div>
+  <img class="rival4" src="../IMG/tentacool_enemigo.gif">
+</div>
+
+<div>
+  <img class="aliado4" src="../IMG/umbreon_espaldas.gif">
+</div>
 
 
 <?php 
@@ -43,7 +45,7 @@ if($respuesta_usuario=="d"){
 
 if(isset($respuesta_usuario) && $respuesta_usuario!="d"){
   $valor_barra=50;
-  echo '<p class="pista">introduce la pista aqui Alex</p>';
+  echo '<p class="pista">Este Pokemon fue creado a partir del ADN de otro pokemon</p>';
  }
 
 ?>
@@ -59,7 +61,7 @@ if (empty($_SESSION['tick_3'])){
 
 $_SESSION['tramposo']=1;
 $valor_enemigo=0;
-header("location:trampas.php");
+header("location:../trampas.php");
 }
 
 

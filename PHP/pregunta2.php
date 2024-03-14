@@ -1,13 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/estilo.css">
-    <title>Document</title>
-</head>
+
+<link rel="stylesheet" href="../CSS/estilo.css">
+
 <body class="fondobatalla">
-<link href="enlace nivel 2"><img src="imagen nivel 2">
+<!-- <link href="enlace nivel 2"><img src="imagen nivel 2"> -->
 
 <form method="get">
 <p>¿Qué tipo de Pokémon es Volcarona?<p>
@@ -22,6 +17,13 @@
   <button class="bajo">Enviar</button>
 </form>
 
+<div>
+  <img class="rival2" src="../IMG/enfrente2.gif">
+</div>
+
+<div>
+  <img class="aliado2" src="../IMG/umbreon_espaldas.gif">
+</div>
 
 <?php 
 
@@ -41,7 +43,7 @@ if($respuesta_usuario=="b"){
 
 if(isset($respuesta_usuario) && $respuesta_usuario!="b"){
   $valor_barra=50;
-  echo '<p class="pista">introduce la pista aqui Alex</p>';
+  echo '<p class="pista">Este pokemon tiene seis alas y tiene un pelaje blanco</p>';
  }
 
 ?>
@@ -58,7 +60,7 @@ if (empty($_SESSION['tick_1'])){
 
 $_SESSION['tramposo']=1;
 
-header("location:trampas.php");
+header("location:../trampas.php");
 
 }
 

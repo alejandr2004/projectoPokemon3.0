@@ -1,18 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/estilo.css">
-    <title>Document</title>
-</head>
+
+<link rel="stylesheet" href="../CSS/estilo.css">
+
 <body class="fondobatalla">
-<link href="enlace nivel 6"><img src="imagen nivel 6">
+<!-- <link href="enlace nivel 6"><img src="imagen nivel 6"> -->
 
 <form method="get">
 <p>¿Qué tipo de Pokémon es Gengar?<p>
 <input type="radio" id="respuesta1" name="respuesta" value="a">
-<label for="respuesta1">a. Fantasma/Veneno</label><br> correcta
+<label for="respuesta1">a. Fantasma/Veneno</label><br>
 <input type="radio" id="respuesta2" name="respuesta" value="b">
 <label for="respuesta2">b. Siniestro/Fantasma</label><br>
 <input type="radio" id="respuesta3" name="respuesta" value="c">
@@ -22,6 +17,13 @@
 <button class="bajo">Enviar</button>
 </form>  
 
+<div>
+  <img class="rival6" src="../IMG/jefe enemigo (de frente).gif">
+</div>
+
+<div>
+  <img class="aliado6" src="../IMG/umbreon_espaldas.gif">
+</div>
 
 <?php 
 
@@ -46,7 +48,7 @@ if($respuesta_usuario=="a"){
 
 if(isset($respuesta_usuario) && $respuesta_usuario!="a"){
   $valor_barra=50;
-  echo '<p class="pista">introduce la pista aqui Alex</p>';
+  echo '<p class="pista">Este Pokemon puede traspasar paredes y el suelo</p>';
  }
 
 ?>
@@ -60,7 +62,7 @@ if(isset($respuesta_usuario) && $respuesta_usuario!="a"){
 if (empty($_SESSION['tick_5'])){
 
 $_SESSION['tramposo']=1;
-header("location:trampas.php");
+header("location:../trampas.php");
 }
 
 // session_destroy(); /*Esto se pondrá en felicidades*/

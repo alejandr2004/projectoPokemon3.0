@@ -47,6 +47,41 @@ h1{
     top: -30vh;
 }
     
+.aliado2{
+    width: 40vh;
+    padding-right: 56.5%;
+    position: relative;
+    top: -28vh;
+}
+    
+.aliado3{
+    width: 40vh;
+    padding-right: 56.5%;
+    position: relative;
+    top: -20vh;
+}
+
+.aliado4{
+    width: 40vh;
+    padding-right: 56.5%;
+    position: relative;
+    top: -29vh;
+}
+
+.aliado5{
+    width: 40vh;
+    padding-right: 56.5%;
+    position: relative;
+    top: -19vh;
+}
+
+.aliado6{
+    width: 40vh;
+    padding-right: 56.5%;
+    position: relative;
+    top: -35vh;
+}
+
 
 .rival{
     width: 45vh;
@@ -56,12 +91,63 @@ h1{
     
 }
 
+.rival2{
+    width: 27vh;
+    padding-left: 64%;
+    position: relative;
+    top: -40vh;
+    
+}
+
+.rival3{
+    width: 30vh;
+    padding-left: 65%;
+    position: relative;
+    top: -30vh;
+    
+}
+
+.rival4{
+    width: 33vh;
+    padding-left: 65%;
+    position: relative;
+    top: -34vh;
+    
+}
+
+.rival5{
+    width: 33vh;
+    padding-left: 65%;
+    position: relative;
+    top: -30vh;
+    
+}
+
+.rival6{
+    width: 45vh;
+    padding-left: 62%;
+    position: relative;
+    top: -38vh;
+}
 
 form{
     position: relative;
-    bottom: -78vh;
+    bottom: -79.2vh;
     color: white;
     font-family: "Arial", sans-serif;
+}
+
+.form2{
+    position: relative;
+    bottom: -76.2vh;
+    color: white;
+    font-family: "Arial", sans-serif;
+}
+
+.estilo{
+    font-size: 1.1rem;
+    color: black;
+    bottom: 10vh;
 }
 .bajo{
     position: relative;
@@ -86,7 +172,8 @@ form{
 /*Alex, usa estas dos clases para mover las barras del enemigo y aliado donde tu quieras*/
 
 #enemigo{       
-
+    top: -20vh;
+   
 
 }
 
@@ -98,9 +185,9 @@ form{
 
 
 #trampa{
-text-align: center; /* Para centrar el párrafo */
-font-size: 36px; /* Tamaño de la fuente más grande */
-color: yellowgreen; /* Color de la letra en rojo */   
+   text-align: center; /* Para centrar el párrafo */
+   font-size: 36px; /* Tamaño de la fuente más grande */
+   color: yellowgreen; /* Color de la letra en rojo */   
 }
 
 .cheater{
@@ -123,23 +210,28 @@ Si quieres darles estilo a las pistas he creado la clase ".pista" aunque se mues
 
 .pista{           
 
-
+    border: 2px solid #000;
+    padding: 20px;
+    width: 300px;
+    font-family: "Arial", sans-serif;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #f0f0f0;
+    top: -65.2vh;
 
 }
 
 
 
 .felicidades{
-
-background-image: url(../IMG/felicidades.PNG);
-background-position: center bottom;
-background-size: 10%;
+   background-image: url(../IMG/felicidades.PNG);
+   background-position: center bottom;
+   background-size: 10%;
 
 }
 
 
 .congrats{
-
     width: 80vh;
     padding-left: 27%;
     

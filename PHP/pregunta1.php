@@ -1,11 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/estilo.css">
-    <title>Document</title>
-</head>
+
+<link rel="stylesheet" href="../CSS/estilo.css">
 <body class="fondobatalla">
   
 
@@ -29,6 +23,7 @@
 <div>
   <img class="aliado" src="../IMG/umbreon_espaldas.gif">
 </div>
+
 
 
 <?php 
@@ -64,7 +59,7 @@ if($respuesta_usuario=="b"){
 
 if(isset($respuesta_usuario) && $respuesta_usuario!="b"){
  $valor_barra=50;
- echo '<p class="pista">introduce la pista aqui Alex</p>';
+ echo '<p class="pista">Este Pokemon su ultima evolucion es la de Charizard</p>';
 }
 
 
