@@ -1,0 +1,146 @@
+body{
+    background-image: url(../IMG/pantalla_de_titulo.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+h1{
+    color: yellow;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: skyblue;
+    font-size: 4.5rem;
+    text-align: center;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    padding-top: 21%;  
+}
+
+.fondo{
+    background-image: url(../IMG/fondo_de_pantalla.png);
+    width: 90vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.boton{
+    width: 30vh;
+    padding-left: 42.3%; 
+}
+
+.columna1{
+    display: flex;
+    padding-top: 5%;
+    width: 10%;
+}
+
+.fondobatalla{
+    background-image: url(../IMG/fondo_batalla.png);  
+    background-size: 213vh 100vh;
+    
+}
+
+.aliado{
+    width: 40vh;
+    padding-right: 56.5%;
+    position: relative;
+    top: -30vh;
+}
+    
+
+.rival{
+    width: 45vh;
+    padding-left: 57.9%;
+    position: relative;
+    top: -35vh;
+    
+}
+
+
+form{
+    position: relative;
+    bottom: -78vh;
+    color: white;
+    font-family: "Arial", sans-serif;
+}
+.bajo{
+    position: relative;
+    bottom: 15vh;
+    margin-left: 150vh;
+    font-family: "Arial", sans-serif;
+    font-size: 1.5rem; 
+    padding: 1vh 7vh; 
+    background-color: #f00; 
+    color: #fff; /* Color de texto */
+    border: none; /* Sin borde */
+    border-radius: 5vh; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    text-transform: uppercase; /* Convertir texto en mayúsculas */
+}
+.boton-pokemon:hover {
+    background-color: #ff4500; /
+}
+
+
+
+/*Alex, usa estas dos clases para mover las barras del enemigo y aliado donde tu quieras*/
+
+#enemigo{       
+
+
+}
+
+
+#aliado{        
+
+
+}
+
+
+#trampa{
+text-align: center; /* Para centrar el párrafo */
+font-size: 36px; /* Tamaño de la fuente más grande */
+color: yellowgreen; /* Color de la letra en rojo */   
+}
+
+.cheater{
+
+    background-image: url(../IMG/tramposo.png);
+}
+
+.game_over{
+    background-color: black;
+    background-image: url(../IMG/GAME_OVER.gif);
+
+}
+
+
+/*Para que introducir las pistas busca las siguientes lineas: 
+
+pregunta1-67/pregunta2-44/pregunta3-44/pregunta4-43/pregunta5-41/pregunta6-44
+
+Si quieres darles estilo a las pistas he creado la clase ".pista" aunque se muestra bien sin estilo*/
+
+.pista{           
+
+
+
+}
+
+
+
+.felicidades{
+
+background-image: url(../IMG/felicidades.PNG);
+background-position: center bottom;
+background-size: 10%;
+
+}
+
+
+.congrats{
+
+    width: 80vh;
+    padding-left: 27%;
+    
+}
