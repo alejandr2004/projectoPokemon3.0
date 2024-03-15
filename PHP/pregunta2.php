@@ -39,8 +39,8 @@ if($respuesta_usuario=="b"){
 /*Si la respuesta del usuario es la "b", lo enviará a la pantalla inicial*/
 
 if(isset($respuesta_usuario) && $respuesta_usuario!="b"){
-  $valor_barra=50;
-  echo '<p class="pista">Este pokemon tiene seis alas y tiene un pelaje blanco</p>';
+  $_SESSION['pista2']=1;
+  header("location:pista2.php");
  }
 
 }

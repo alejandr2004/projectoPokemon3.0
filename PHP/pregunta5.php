@@ -40,8 +40,8 @@ if($respuesta_usuario=="c"){
 /*Si la respuesta del usuario es la "c", lo enviará a la pantalla inicial*/
 
 if(isset($respuesta_usuario) && $respuesta_usuario!="c"){
-  $valor_barra=50;
-  echo '<p class="pista">Este pokemon tiene el pelaje de color marron</p>';
+  $_SESSION['pista5']=1;
+  header("location:pista5.php");
  }
 
 }

@@ -43,8 +43,8 @@ if($respuesta_usuario=="c"){
 /*Si la respuesta del usuario es la "c", lo enviará a la pantalla inicial*/
 
 if(isset($respuesta_usuario) && $respuesta_usuario!="c"){
-  $valor_barra=50;
-  echo '<p class="pista">Este Pokemon legendario sale en la portada del juego Pokemon diamente</p>';
+  $_SESSION['pista3']=1;
+  header("location:pista3.php");
  }
 }
 ?>

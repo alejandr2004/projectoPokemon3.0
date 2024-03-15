@@ -55,8 +55,9 @@ if($respuesta_usuario=="b"){
 
 
 if(isset($respuesta_usuario) && $respuesta_usuario!="b"){
- $valor_barra=50;
- echo '<p class="pista">Este Pokemon su ultima evolucion es la de Charizard</p>';
+ $_SESSION['pista1']=1;
+ header("location:pista1.php");
+ 
 }
 
 

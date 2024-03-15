@@ -42,8 +42,8 @@ if($respuesta_usuario=="d"){
 /*Si la respuesta del usuario es la "d", lo enviará a la pantalla inicial*/
 
 if(isset($respuesta_usuario) && $respuesta_usuario!="d"){
-  $valor_barra=50;
-  echo '<p class="pista">Este Pokemon fue creado a partir del ADN de otro pokemon</p>';
+  $_SESSION['pista4']=1;
+  header("location:pista4.php");
  }
 }
 ?>

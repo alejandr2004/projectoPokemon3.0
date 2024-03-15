@@ -46,8 +46,8 @@ if($respuesta_usuario=="a"){
 /*Si la respuesta del usuario es la "a", lo enviará a la pantalla inicial*/
 
 if(isset($respuesta_usuario) && $respuesta_usuario!="a"){
-  $valor_barra=50;
-  echo '<p class="pista">Este Pokemon puede traspasar paredes y el suelo</p>';
+  $_SESSION['pista6']=1;
+  header("location:pista6.php");
  }
 }
 ?>
