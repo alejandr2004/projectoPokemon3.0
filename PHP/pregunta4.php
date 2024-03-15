@@ -15,7 +15,7 @@
   <input type="radio" id="respuesta3" name="respuesta" value="c">
   <label for="respuesta3">c.  Veneno</label><br>
   <input type="radio" id="respuesta4" name="respuesta" value="d">
-  <label for="respuesta4">d. Psquico</label><br><br> correcta
+  <label for="respuesta4">d. Psquico</label><br><br> 
   <button class="bajo">Enviar</button>
 </form>
 
@@ -32,9 +32,7 @@
 
 session_start();
 
-$valor_barra=100;
-$valor_enemigo=100;
-
+if (isset($_GET["respuesta"])) {
 $respuesta_usuario=$_GET['respuesta'];  /*Recojo la respuesta del usuario*/
 
 if($respuesta_usuario=="d"){
@@ -47,7 +45,7 @@ if(isset($respuesta_usuario) && $respuesta_usuario!="d"){
   $valor_barra=50;
   echo '<p class="pista">Este Pokemon fue creado a partir del ADN de otro pokemon</p>';
  }
-
+}
 ?>
 
 

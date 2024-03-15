@@ -28,9 +28,8 @@
 
 <?php 
 session_start();
-$valor_barra=100;
-$valor_enemigo=100;
 
+if (isset($_GET["respuesta"])) {
 $respuesta_usuario=$_GET['respuesta'];  /*Recojo la respuesta del usuario*/
 
 if($respuesta_usuario=="c"){
@@ -45,7 +44,7 @@ if(isset($respuesta_usuario) && $respuesta_usuario!="c"){
   echo '<p class="pista">Este pokemon tiene el pelaje de color marron</p>';
  }
 
-
+}
 ?>
 
 

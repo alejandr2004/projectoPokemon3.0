@@ -28,11 +28,11 @@
 
 <?php 
 
-$valor_barra=100;
-$valor_enemigo=100;
+
 
 session_start();
 
+if (isset($_GET["respuesta"])) {
 $respuesta_usuario=$_GET['respuesta'];  /*Recojo la respuesta del usuario*/
 
 if($respuesta_usuario=="c"){
@@ -46,7 +46,7 @@ if(isset($respuesta_usuario) && $respuesta_usuario!="c"){
   $valor_barra=50;
   echo '<p class="pista">Este Pokemon legendario sale en la portada del juego Pokemon diamente</p>';
  }
-
+}
 ?>
 
 

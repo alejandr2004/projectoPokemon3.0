@@ -27,11 +27,8 @@
 
 <?php 
 
-$valor_barra=100;
-$valor_enemigo=100;
-
 session_start();
-
+if (isset($_GET["respuesta"])) {
 $respuesta_usuario=$_GET['respuesta'];  /*Recojo la respuesta del usuario*/
 
 if($respuesta_usuario=="b"){
@@ -45,6 +42,9 @@ if(isset($respuesta_usuario) && $respuesta_usuario!="b"){
   $valor_barra=50;
   echo '<p class="pista">Este pokemon tiene seis alas y tiene un pelaje blanco</p>';
  }
+
+}
+
 
 ?>
 

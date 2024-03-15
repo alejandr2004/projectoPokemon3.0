@@ -29,18 +29,13 @@
 <?php 
 
 
-
-
-
-$valor_barra=100;
-$valor_enemigo=100;
-
 session_start();
 
 
 
-
+if (isset($_GET["respuesta"])) {
 $respuesta_usuario=$_GET['respuesta'];  /*Recojo la respuesta del usuario*/
+
 
 if($respuesta_usuario=="b"){
   $_SESSION['tick_1']=1;                            /*Aquí pondré la barra de vida del rival a 0*/
@@ -50,6 +45,8 @@ if($respuesta_usuario=="b"){
 
 }
 /*Si la respuesta del usuario es la "b", lo enviará a la pantalla inicial*/
+
+}
 ?>
 
 

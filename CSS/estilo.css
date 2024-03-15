@@ -220,6 +220,27 @@ Si quieres darles estilo a las pistas he creado la clase ".pista" aunque se mues
     
 }
 
+.bot{
+    
+    bottom: 15vh;
+    margin-left: 150vh;
+    font-family: "Arial", sans-serif;
+    font-size: 1.5rem; 
+    padding: 1vh 7vh; 
+    background-color: #f00; 
+    color: #fff; /* Color de texto */
+    border: none; /* Sin borde */
+    border-radius: 5vh; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    text-transform: uppercase; /* Convertir texto en mayúsculas */
+
+
+}
+
+
+
+
+
 @media only screen and (max-width: 700px){
     .boton{
         padding-left: 28%;

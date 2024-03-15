@@ -31,11 +31,10 @@ session_start();
 
 
 
-$valor_barra=100;
-$valor_enemigo=100;
 
 
 
+if (isset($_GET["respuesta"])) {
 $respuesta_usuario=$_GET['respuesta'];  /*Recojo la respuesta del usuario*/
 
 if($respuesta_usuario=="a"){
@@ -50,7 +49,7 @@ if(isset($respuesta_usuario) && $respuesta_usuario!="a"){
   $valor_barra=50;
   echo '<p class="pista">Este Pokemon puede traspasar paredes y el suelo</p>';
  }
-
+}
 ?>
 
 
