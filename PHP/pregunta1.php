@@ -68,8 +68,7 @@ if(isset($respuesta_usuario) && $respuesta_usuario!="b"){
 ?>
 
 
-<progress id="aliado" max="100" value="<?php echo $valor_barra; ?>"><?php echo $valor_barra; ?>%</progress>
-<progress id="enemigo" max="100" value="<?php echo $valor_enemigo; ?>"><?php echo $valor_enemigo; ?>%</progress>
+
 
 
 

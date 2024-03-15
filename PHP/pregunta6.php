@@ -42,7 +42,7 @@ if($respuesta_usuario=="a"){
   
   $_SESSION['tick_6']=1; 
   $valor_enemigo=0;
-  header("Location:../felicidades.php");
+  header("Location:felicidades.php");
 }
 /*Si la respuesta del usuario es la "a", lo enviará a la pantalla inicial*/
 
@@ -62,7 +62,7 @@ if(isset($respuesta_usuario) && $respuesta_usuario!="a"){
 if (empty($_SESSION['tick_5'])){
 
 $_SESSION['tramposo']=1;
-header("location:../trampas.php");
+header("location:trampas.php");
 }
 
 // session_destroy(); /*Esto se pondrá en felicidades*/
@@ -70,8 +70,7 @@ header("location:../trampas.php");
 
 ?>
 
-<progress id="aliado" max="100" value="<?php echo $valor_barra; ?>"><?php echo $valor_barra; ?>%</progress>
-<progress id="enemigo" max="100" value="<?php echo $valor_enemigo; ?>"><?php echo $valor_enemigo; ?>%</progress>
+
 
 </body>
 </html>

@@ -59,15 +59,14 @@ if(isset($respuesta_usuario) && $respuesta_usuario!="c"){
 if (empty($_SESSION['tick_4'])){
   
 $_SESSION['tramposo']=1;
-header("location:../trampas.php");
+header("location:trampas.php");
 }
 
 
 
 ?>
 
-<progress id="aliado" max="100" value="<?php echo $valor_barra; ?>"><?php echo $valor_barra; ?>%</progress>
-<progress id="enemigo" max="100" value="<?php echo $valor_enemigo; ?>"><?php echo $valor_enemigo; ?>%</progress>
+
 
 
 </body>

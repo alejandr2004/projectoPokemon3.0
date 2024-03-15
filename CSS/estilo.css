@@ -146,7 +146,7 @@ form{
 
 .estilo{
     font-size: 1.1rem;
-    color: black;
+    color: white;
     bottom: 10vh;
 }
 .bajo{
@@ -166,23 +166,6 @@ form{
 .boton-pokemon:hover {
     background-color: #ff4500; /
 }
-
-
-
-/*Alex, usa estas dos clases para mover las barras del enemigo y aliado donde tu quieras*/
-
-#enemigo{       
-    top: -20vh;
-   
-
-}
-
-
-#aliado{        
-
-
-}
-
 
 #trampa{
    text-align: center; /* Para centrar el párrafo */
@@ -235,4 +218,103 @@ Si quieres darles estilo a las pistas he creado la clase ".pista" aunque se mues
     width: 80vh;
     padding-left: 27%;
     
+}
+
+@media only screen and (max-width: 700px){
+    .boton{
+        padding-left: 28%;
+    }
+
+    .fondo{
+        width: 66vh;
+    }
+
+    .fondobatalla{
+        width: 100%
+        
+    }
+
+    .aliado{
+        width: 25vh;
+        top: -1vh;
+       
+    }
+
+    .aliado2{
+        width: 24vh;
+        top: -1vh;
+       
+    }
+
+    .aliado3{
+        width: 24vh;
+        top: -0.5vh;
+       
+    }
+
+    .aliado4{
+        width: 24vh;
+        top: -0.5vh;
+        
+    }
+    .aliado5{
+        width: 24vh;
+        top: -0.2vh;
+    }
+    .aliado6{
+        width: 24vh;
+        top: -20vh;
+    }
+
+    .rival{
+        width: 30vh;
+        padding-left: 50%;
+        top: -25vh;
+        
+    }
+
+    .rival2{
+        width: 20vh;
+        padding-left: 60%;
+        top: -25vh;
+        
+    }
+
+    .rival3{
+        width: 23vh;
+        padding-left: 65%;
+        top: -25vh;
+        
+    }
+
+    .rival4{
+        width: 23vh;
+        padding-left: 65%;
+        top: -25vh;
+        
+    }
+
+    .rival5{
+        width: 23vh;
+        padding-left: 65%;
+        top: -25vh;
+        
+    }
+
+    .bajo{
+        margin-left: 30vh;
+        font-size: 1.3rem; 
+        padding: 2vh 4vh; 
+    }
+
+    form{
+        font-size: 1rem;
+        
+    }
+
+    .estilo{
+        font-size: 1rem;
+       
+    }
+
 }
